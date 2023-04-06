@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: lightskyblue;
+}
+
+.right-side {
+    grid-column: 2;
+    grid-template-rows: 1fr 2fr 4fr;
+    background-color: lightgrey;
+}
+
+.header {
+    background-color: white;
+}
