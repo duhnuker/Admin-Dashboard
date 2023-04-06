@@ -4,9 +4,18 @@
     height: 100vh;
 }
 
+/* Left Side */
+
 .sidebar {
     background-color: lightskyblue;
+    color: white;
 }
+
+ul {
+    list-style-type: none;
+}
+
+/* Right Side */
 
 .right-side {
     grid-column: 2;
@@ -16,4 +25,10 @@
 
 .header {
     background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+input {
+    background-color: lightgrey;
 }
