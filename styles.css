@@ -7,12 +7,22 @@
 /* Left Side */
 
 .sidebar {
-    background-color: lightskyblue;
+    background-color: #1B1A17;
     color: white;
+    font-weight: bold;
 }
 
 ul {
     list-style-type: none;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
 }
 
 /* Right Side */
@@ -25,13 +35,68 @@ ul {
 }
 
 .header {
-    background-color: white;
+    background-color: #D3C7B2;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
 }
 
 input {
-    background-color: lightgrey;
+    grid-column: 1;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 80%;
+    height: 25px;
+    margin-left: 5px;
+}
+
+.profile, .header-buttons {
+    grid-column: 2;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    font-weight: bold;
+}
+
+.profile-pic-left, .profile-pic-right {
+    border-radius: 30px;
+}
+
+.profile-pic-right {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.greeting {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.greeting, button {
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    padding: 10px 26px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
 }
 
 .content-container {
@@ -44,6 +109,7 @@ input {
     grid-row: 2;
     display: flex;
     justify-content: space-around;
+    font-weight: bold;
 }
 
 .cards-container {
@@ -56,35 +122,34 @@ input {
 
 .cards {
     height: 150px;
-    width: 350px;
+    width: 300px;
     padding: 20px;
-    border-left: 10px solid orange;
+    border-left: 10px solid burlywood;
     background-color: white;
     margin-bottom: 20px;
     margin-left: 10px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 .updates-container {
     grid-column: 2;
     grid-row: 3;
     margin-left: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .a-card {
     background-color: white;
     border-bottom: 3px solid black;
     padding: 20px;
-}
-
-.a2-card {
-    background-color: white;
-    padding: 20px;
+    border-radius: 10px;
 }
 
 .trending {
     margin-top: 230px;
     background-color: white;
+    border-radius: 10px;
 }
 
 .t-card {
