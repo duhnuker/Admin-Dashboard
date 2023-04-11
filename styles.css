@@ -34,6 +34,8 @@ li {
     background-color: lightgrey;
 }
 
+/*  */
+
 .header {
     background-color: #D3C7B2;
     display: grid;
@@ -99,18 +101,37 @@ button {
     color: white;
 }
 
+/*  */
+
 .content-container {
     display: grid;
     grid-template-rows: 1fr 4fr;
     grid-template-columns: 3fr 1fr;
 }
 
+/*  */
+
+
+
 .headings {
     grid-row: 2;
-    display: flex;
-    justify-content: space-around;
     font-weight: bold;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
+
+.announce-heading {
+    grid-column: 2;
+    margin-left: 25px;
+    font-size: 1.2rem;
+}
+
+.projects-heading {
+    margin-left: 30px;
+    font-size: 1.2rem;
+}
+
+/*  */
 
 .cards-container {
     grid-row: 3;
