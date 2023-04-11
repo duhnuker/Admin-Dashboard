@@ -20,6 +20,7 @@ ul {
 .right-side {
     grid-column: 2;
     grid-template-rows: 1fr 2fr 4fr;
+    grid-template-columns: 3fr 1fr;
     background-color: lightgrey;
 }
 
@@ -40,8 +41,9 @@ input {
 }
 
 .headings {
+    grid-row: 2;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .cards-container {
@@ -49,14 +51,42 @@ input {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
 }
 
 .cards {
     height: 150px;
     width: 350px;
-    padding: 25px;
+    padding: 20px;
     border-left: 10px solid orange;
     background-color: white;
     margin-bottom: 20px;
+    margin-left: 10px;
 }
 
+.updates-container {
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.a-card {
+    background-color: white;
+    border-bottom: 3px solid black;
+    padding: 20px;
+}
+
+.a2-card {
+    background-color: white;
+    padding: 20px;
+}
+
+.trending {
+    margin-top: 230px;
+    background-color: white;
+}
+
+.t-card {
+    padding: 20px;
+}
