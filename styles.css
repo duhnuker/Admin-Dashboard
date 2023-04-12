@@ -47,9 +47,7 @@ li {
     background-color: #D3C7B2;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding: 30px 0px 30px 30px;
 }
 
 .search-bar {
@@ -75,8 +73,18 @@ input {
 .profile {
     display: flex;
     align-items: center;
-    margin-left: 80px;
     font-weight: bold;
+    margin-left: 80px;
+    
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    padding: 10px 26px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
 }
 
 .profile-pic-left, .profile-pic-right {
@@ -99,14 +107,7 @@ input {
     font-weight: bold;
 }
 
-button {
-    border-radius: 10px;
-    border: none;
-    padding: 10px 26px;
-    margin-left: 20px;
-    background-color: black;
-    color: white;
-}
+
 
 /*  */
 
@@ -153,10 +154,10 @@ button {
     height: 150px;
     width: 300px;
     padding: 20px;
-    border-left: 10px solid burlywood;
     background-color: white;
     margin-bottom: 20px;
     margin-left: 45px;
+    border-left: 10px solid burlywood;
     border-radius: 10px;
     border-bottom: 3px solid black;
 }
