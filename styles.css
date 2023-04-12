@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
+* {
+    font-family: 'Arvo', serif;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -7,6 +13,7 @@
 /* Left Side */
 
 .sidebar {
+    padding-top: 50px;
     background-color: #1B1A17;
     color: white;
     font-weight: bold;
@@ -40,10 +47,9 @@ li {
     background-color: #D3C7B2;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding-left: 10px;
+    padding-left: 30px;
     padding-bottom: 30px;
     padding-top: 30px;
-    padding-right: 50px;
 }
 
 .search-bar {
@@ -63,6 +69,7 @@ input {
 
 .profile, .header-buttons {
     grid-column: 2;
+    padding-left: 90px;
 }
 
 .profile {
@@ -128,7 +135,7 @@ button {
 }
 
 .projects-heading {
-    margin-left: 30px;
+    margin-left: 50px;
     font-size: 1.2rem;
 }
 
@@ -149,9 +156,15 @@ button {
     border-left: 10px solid burlywood;
     background-color: white;
     margin-bottom: 20px;
-    margin-left: 25px;
+    margin-left: 45px;
     border-radius: 10px;
+    border-bottom: 3px solid black;
+}
+
+a {
     font-weight: bold;
+    font-size: 1.1rem;
+    color: inherit;
 }
 
 .updates-container {
@@ -160,19 +173,36 @@ button {
     margin-right: 20px;
 }
 
-.a-card {
+.announcements {
     background-color: white;
-    border-bottom: 3px solid black;
-    padding: 20px;
     border-radius: 10px;
+}
+
+.a-card {
+    border-bottom: 3px solid black;
+    padding: 5px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.a-title {
+    font-weight: bold;
 }
 
 .trending {
-    margin-top: 230px;
+    margin-top: 100px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .t-card {
+    display: flex;
+    align-items: center;
     padding: 20px;
+    border-bottom: 3px solid black;
+    border-radius: 10px;
+}
+
+.t-pic {
+    border-radius: 50px;
+    margin-right: 10px;
 }
