@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     height: 100vh;
 }
 
@@ -117,12 +117,13 @@ button {
     grid-row: 2;
     font-weight: bold;
     display: grid;
+    justify-content: center;
     grid-template-columns: 3fr 1fr;
 }
 
 .announce-heading {
     grid-column: 2;
-    margin-left: 25px;
+    margin-left: 5px;
     font-size: 1.2rem;
 }
 
@@ -136,8 +137,8 @@ button {
 .cards-container {
     grid-row: 3;
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    justify-items: space-around;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
     gap: 50px;
 }
 
@@ -148,7 +149,7 @@ button {
     border-left: 10px solid burlywood;
     background-color: white;
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 25px;
     border-radius: 10px;
     font-weight: bold;
 }
@@ -156,7 +157,6 @@ button {
 .updates-container {
     grid-column: 2;
     grid-row: 3;
-    margin-left: 20px;
     margin-right: 20px;
 }
 
